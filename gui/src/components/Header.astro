@@ -1,18 +1,28 @@
 <style lang="scss">
     body > header {
+        position: sticky;
         border-bottom: 2px solid black;
         padding: 5px 10px;
         margin-bottom: 5px;
-        & > * {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        * {
             display: inline-block;
         }
-        & > .icon {
+        & > a {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+        .icon {
             height: 3em;
-            transform: translateY(25%);
+            margin-right: 0.3em;
+            //transform: translateY(25%);
         }
     }
 </style>
 <header>
-    <img class="icon" src="/favicon.png"/>
-    <h2 class="title">Emerald Templates</h2>
+    <a href="/"><img class="icon" src="/favicon.png"/>
+        <h2 class="title">Emerald Templates</h2></a>
 </header>
