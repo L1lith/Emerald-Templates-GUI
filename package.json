@@ -3,8 +3,8 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "dev": "cd gui && astro dev",
-    "start": "cd gui && astro dev",
+    "dev": "concurrently \"cd gui && astro dev\" \"neu run\"",
+    "start": "npm run build && neu run",
     "build": "cd gui && astro build",
     "preview": "cd gui && astro preview"
   },
@@ -12,6 +12,7 @@
     "@astrojs/sitemap": "^0.1.0",
     "@astrojs/solid-js": "^0.1.2",
     "astro": "^1.0.0-beta.36",
+    "concurrently": "^7.2.1",
     "solid-js": "^1.4.3"
   }
 }
