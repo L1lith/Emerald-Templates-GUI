@@ -2,5 +2,8 @@
 import Layout from '../layouts/Layout.astro';
 ---
 <Layout>
+	<script is:inline>
+		window.title = Object.keys(Neutralino).join(', ')
+	</script>
 	<div>hi there</div>
 </Layout>

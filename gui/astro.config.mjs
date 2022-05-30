@@ -1,10 +1,9 @@
 import { defineConfig } from "astro/config";
 
 import solid from "@astrojs/solid-js";
-import sitemap from "@astrojs/sitemap";
 
 // https://astro.build/config
 export default defineConfig({
   outDir: "../resources",
-  integrations: [solid(), sitemap()],
+  integrations: [solid()],
 });
