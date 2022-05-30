@@ -1,0 +1,17 @@
+{
+  "name": "emt-gui",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "dev": "cd gui && astro dev",
+    "start": "cd gui && astro dev",
+    "build": "cd gui && astro build",
+    "preview": "cd gui && astro preview"
+  },
+  "devDependencies": {
+    "@astrojs/sitemap": "^0.1.0",
+    "@astrojs/solid-js": "^0.1.2",
+    "astro": "^1.0.0-beta.36",
+    "solid-js": "^1.4.3"
+  }
+}
